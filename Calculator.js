@@ -1,61 +1,59 @@
-//const a = Math.random()
-//const b = Math.random()
 
 
 
 
-const CalculatorAdd = (a, b) => {
+const add = (a, b) => {
    
     return a + b
 }
 
 
-module.exports = CalculatorAdd;
+module.exports.add = add;
 
 
-const CalculatorSubtract = (a, b) => {
+const subtract = (a, b) => {
    
     return a - b
 }
 
 
-module.exports = CalculatorSubtract;
+module.exports.subtract = subtract;
 
 
 
-const CalculatorMultiply = (a, b) => {
+const multiply = (a, b) => {
    
     return a * b
 }
 
 
-module.exports = CalculatorMultiply;
+module.exports.multiply = multiply;
 
 
-const CalculatorDivide = (a, b) => {
+const divide = (a, b) => {
    
     return a / b
 }
 
 
-module.exports = CalculatorDivide;
+module.exports.divide = divide;
 
 
 
-const CalculatorSqRt = (a, b) => {
+const sqrt = (a) => {
    
     return Math.sqrt(a)
 }
 
 
-module.exports = CalculatorSqRt;
+module.exports.sqrt = sqrt;
 
 
 
-const CalculatorPower = (a, b) => {
+const pow = (a, b) => {
    
-   return Math.pow(b)
+   return Math.pow(a, b)
 }
 
 
-module.exports = CalculatorPower;
+module.exports.pow = pow;
