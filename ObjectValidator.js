@@ -4,8 +4,17 @@
 
 
 
+const ObjectValidator = (object1, string1) => {
 
-const ObjectValidator = (str) => {
-    return str.split('').reverse().join('')
-   
+    
+if ( object1 = string1 ) {
+    return object1
+}
+
+}
+
+
+
+module.exports = {
+    ObjectValidator
 }
