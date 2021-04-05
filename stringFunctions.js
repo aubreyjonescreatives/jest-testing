@@ -1,30 +1,35 @@
 
 
-function stringRev(str) {
-        return str.split('').reverse().join('')
-        return 'looC is MGD'
-    };
-    
-    module.exports.stringRev = stringRev;
 
 
 
-
-function stringUpper(upper) {
-        return upper.toUpperCase()
-      
-    }
-    
-    module.exports.stringUpper = stringUpper
-    
-    
-
-function stringVowels(removeVowels) {
-    var regex = /[aeiou]/g
-    for (var i = 0; i < removeVowels.length; i++) {
-    return removeVowels.replace(regex, "")
-    }
+const Reverse = (str) => {
+    return str.split('').reverse().join('')
+   
 }
 
-module.exports.stringVowels = stringVowels
 
+
+const UpperCase = (str) => {
+    return str.toUpperCase()
+    
+}
+
+
+
+const RemoveVowels = (str) => {
+    const vowels = /[aeiou]+/g
+    return str.replace(vowels, '')
+    
+}
+
+
+
+
+
+
+module.exports = {
+    Reverse,
+    UpperCase, 
+    RemoveVowels
+}

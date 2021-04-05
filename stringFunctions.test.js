@@ -1,20 +1,31 @@
-
 const { it, expect } = require('@jest/globals')
 
-const stringRev = require('./stringFunctions.js')
-const stringUpper = require('./stringFunctions.js')
-const stringVowels = require('./stringFunctions.js')
-
-it('should reverse a string', () => {
-    expect(stringRev.stringRev('DGM is Cool')).toBe('looC si MGD')
-});
 
 
-it('should uppercase a string', () => {
-    expect(stringUpper.stringUpper('all of these words')).toBe('ALL OF THESE WORDS')
-});
+
+const { Reverse, UpperCase, RemoveVowels } = require('./StringFunctions')
 
 
-it('should remove all vowels from a string', () => {
-    expect(stringVowels.stringVowels('Hello World')).toBe('Hll Wrld')
-});
+
+
+describe('This function will reverse a string', () => {
+    test('Coding is Cool', () => {
+        expect(Reverse('Coding is Cool')).toBe('looC si gnidoC')
+    } )
+})
+
+
+
+describe('This function will uppercase a string', () => {
+    test('coding is cool', () => {
+        expect(UpperCase('coding is cool')).toBe('CODING IS COOL')
+    } )
+})
+
+
+
+describe('This function will remove vowels from a string', () => {
+    test('coding is cool', () => {
+        expect(RemoveVowels('coding is cool')).toBe('cdng s cl')
+    } )
+})

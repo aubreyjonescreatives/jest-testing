@@ -1,59 +1,42 @@
 
 
-
-
 const add = (a, b) => {
-   
     return a + b
 }
 
 
-module.exports.add = add;
-
-
 const subtract = (a, b) => {
-   
     return a - b
 }
 
 
-module.exports.subtract = subtract;
-
-
-
 const multiply = (a, b) => {
-   
     return a * b
 }
 
 
-module.exports.multiply = multiply;
-
-
 const divide = (a, b) => {
-   
     return a / b
 }
 
 
-module.exports.divide = divide;
-
-
-
-const sqrt = (a) => {
-   
-    return Math.sqrt(a)
+const hypotenuse = (a, b) => {
+    return (Math.sqrt((a * a) + (b * b)))
 }
 
 
-module.exports.sqrt = sqrt;
-
-
-
-const pow = (a, b) => {
-   
-   return Math.pow(a, b)
+const power = (a, b) => {
+    return (Math.pow(a, b))
 }
 
 
-module.exports.pow = pow;
+
+
+module.exports = {
+    add, 
+    subtract, 
+    multiply, 
+    divide, 
+    hypotenuse, 
+    power
+}
